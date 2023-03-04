@@ -1,0 +1,69 @@
+block contacts 
+	section#contacts.contacts 
+		.container
+			.row
+				.col-12
+					h2.h2-title Контакты
+			.row.align-items-center
+				.col-12.col-lg-6
+					.contacts-box
+						#scene4.scene4
+							.layer(data-depth="0.3")
+								img.contacts-box__image.col-12(src="img/contact-image.jpg", alt="Контакты")
+						h3.h3-title.h3-title_t-margin Свяжитесь со мной
+						.contacts-box__social.d-flex 
+							// noindex
+							a.contacts-box__link(href="https://www.instagram.com/doroshenko.bey"  target="_blank")
+								img.contacts-box__social-icon(src="img/icon-instagram.png", alt="Instagram Дорошенко Александр")
+							// /noindex
+							// noindex
+							a.contacts-box__link(href="https://t.me/Aleksandr_Doroshenko" target="_blank" )
+								img.contacts-box__social-icon(src="img/icon-telegram.png", alt="Telegram Дорошенко Александр")
+							// /noindex
+							// noindex
+							a.contacts-box__link(href="https://wa.me/+380964725152" target="_blank")
+								img.contacts-box__social-icon(src="img/icon-whatsapp.png", alt="Whatsapp Дорошенко Александр")
+							// /noindex
+							// noindex
+							a.contacts-box__link(href="https://www.facebook.com/aleksandr.doroshenko.311/" target="_blank")
+								img.contacts-box__social-icon(src="img/icon-facebook.png", alt="Facebook Дорошенко Александр")
+							// /noindex
+							// noindex
+							a.contacts-box__link(href="viber://chat?number=%2B380505815234" target="_blank")
+								img.contacts-box__social-icon(src="img/icon-viber.png", alt="Viber Дорошенко Александр")
+							// /noindex
+							// noindex
+							//- a.contacts-box__link(href="#" target="_blank" )
+							//- 	img.contacts-box__social-icon(src="img/icon-vk.png", alt="VK Дорошенко Александр")
+							// /noindex
+						.contacts-box__info.d-block.d-md-flex.d-lg-block.d-xl-flex.justify-content-md-between
+							.contacts-box__tels
+								a.contacts-box__tel(href="tel:+380505815234") +38 (050) 581-52-34
+								a.contacts-box__tel.contacts-box__tel_no-img(href="tel:+380964725152") +38 (096) 472-51-52
+							.contacts-box__mails
+								a.contacts-box__mail(href="mailto:dav.front.end@gmail.com") dav.front.end@gmail.com
+				.col-12.col-lg-6 
+					.contacts-box__forms
+						.contacts-box__forms-box
+							h3.h3-title Ваше сообщение
+							p.contacts-box__text Хотите верстку своего сайта? <span class="text-about__item_transfer">Напишите своё предложение по созданию проекта, задайте интересующий вас вопрос, предложите сотрудничество с вашим брендом или компанией.</span>
+
+						form#form.form.contacts-box__form(enctype="multipart/form-data")
+							<input type="hidden" name="admin_email[]" value="dav.front.end@gmail.com">
+							input(type="hidden" name="form_subject" value="Заявка с сайта DAV-Front-end")
+							.contacts-box__item 
+								input#contacts-box__name.contacts-box__input(type="text" name="name" data-validate-field="name" placeholder="Имя")
+							.contacts-box__item
+								input#contacts-box__email.contacts-box__input(type="email" name="email" data-validate-field="email" placeholder="E-mail")
+							.contacts-box__item
+								input#contacts-box__tel.contacts-box__input(type="tel" name="tel" data-validate-field="tel" placeholder="Телефон")
+							.contacts-box__item
+								textarea#contacts-box__message.contacts-box__input(name="message" placeholder="Ваше предложение" rows="3")
+							//- .contacts-box__item
+								.checkbox
+									input#formAgreement.checkbox__input(type="checkbox" name="agreement")
+									label.checkbox__label(for="formAgreement")
+										span.checkbox__span Я даю согласие на обработку персональных данных
+							button.btn.btn__form(type="submit") Заказать верстку
+						.contacts-box__forms-box
+							p.contacts-box__text Отправленные Вами данные не будут использоваться в рекламных целях и не будут переданы третим лицам.

@@ -1,0 +1,51 @@
+block header 
+	.preloader
+		.preloader__row
+			.preloader__item
+			.preloader__item
+	header#header.header
+		#sticky-menu.sticky-menu
+			.container 
+				.row
+					.menu
+						.col-2
+							a.logo(href="#header") 
+						.col-md-10.col-lg-7.d-md-block
+							#overlay.overlay.d-none
+							#modal-menu.modal-menu.d-none.d-md-block 
+								nav#nav.nav.justify-content-center.d-sm-flex.justify-content-sm-center.justify-content-sm-end.justify-content-lg-center
+									ul.nav__list.d-sm-flex
+										li.nav__item
+											a#home-menu.nav__link.active(href="#header") Главная
+										li.nav__item 
+											a#about-menu.nav__link(href="#about") Обо мне
+										li.nav__item 
+											a#portfolio-menu.nav__link(href="#portfolio") Портфолио
+										li.nav__item 
+											a#scheme-menu.nav__link(href="#scheme") Схема работы
+										li.nav__item 
+											a#technology-menu.nav__link(href="#technology") Технологии
+										li.nav__item 
+											a#contacts-menu.nav__link(href="#contacts") Контакты
+						.col-lg-3.d-none.d-lg-block
+							.info.d-flex.d-lg-block.justify-content-between
+								.info__tels
+									a.info__tel(href="tel:+380505815234") +38 (050) 581-52-34
+									a.info__tel.info__tel_no-img(href="tel:+380964725152") +38 (096) 472-51-52
+								.info__mails
+									a.info__mail(href="mailto:dav.front.end@gmail.com") dav.front.end@gmail.com
+						.col-10.d-md-none.d-flex.justify-content-end
+							img#menu-burger__image.menu-burger__image(src="img/icon-burger.png", alt="#") 
+
+
+		.container
+			.offer
+				.row.align-items-center
+					.col-12.col-md-6
+						.offer__texts
+							h1.offer__title <span class="offer__title_border"> Верстаю сайты</span>, которые увеличивают продажи <span class="offer__title_border">вашего бизнеса</span> 
+							p.offer__text Ваш сайт будет отлично выглядеть на любых устройствах, будь то компьютер, ноутбук или планшет. Это в разы увеличит поток заинтересованных посетителей.
+							a.btn.btn__offer(href="#contacts") Заказать верстку
+					.col-6.d-none.d-md-block
+						.offer__image.col-12
+							img.offer__item(src="img/bg-doroshenko.png", alt="Смартфон")
